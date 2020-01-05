@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: lafarge-server-order-calc
+  redis:
+    host:
+    port: 6379
+    database: 2
+    password:
+    timeout: 2000
+    lettuce:
+      pool:
+        max-active: 2
+        max-idle: 2
+        min-idle: 0
+        max-wait: -1ms
+  redis2:
+    host: 192.168.1.15
+    port: 6379
+    database: 3
+    password:
+    timeout: 2000
+    lettuce:
+      pool:
+        max-active: 2
+        max-idle: 2
+        min-idle: 0
+        max-wait: -1ms
